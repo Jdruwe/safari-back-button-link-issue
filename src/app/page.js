@@ -1,10 +1,19 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <Link href="https://stackoverflow.com">
+          NextJS stackoverflow
+        </Link>
+
+        <a href="https://stackoverflow.com" target="_self">
+          stackoverflow
+        </a>
+
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.js</code>
